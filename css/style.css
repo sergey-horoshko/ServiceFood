@@ -12,6 +12,7 @@ body {
 ._container {
   max-width: 1194px;
   margin: 0 auto;
+  position: relative;
 }
 
 .header {
@@ -146,6 +147,27 @@ body {
   margin-bottom: 30px;
 }
 
+.swiper {
+  position: relative;
+}
+
+.sliders-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  right: 46px;
+  bottom: 40px;
+  z-index: 9;
+  max-width: 100px;
+  width: 100%;
+}
+
+.slider-button-next,
+.slider-button-prev {
+  cursor: pointer;
+}
+
 .button {
   display: inline-block;
   border-radius: 25px;
@@ -168,6 +190,18 @@ body {
 
 .slide-summer {
   background: url("../img/summer.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-vitamin {
+  background: url("../img/vitamin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.slide-spring {
+  background: url("../img/spring.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -250,4 +284,542 @@ body {
 
 .minimal {
   background: url("../img/minimal.png") no-repeat center / cover;
+}
+
+/* Секция доставки еды на неделю */
+.delivery-week {
+  padding: 50px 0 100px;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 23px;
+  margin: 0 0 47px 0;
+}
+
+.delivery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.delivery-card {
+  margin: 15px;
+  position: relative;
+  width: 100%;
+  max-width: 275px;
+  height: 182px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.delivery-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.delivery-tag {
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  padding: 5px 10px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  color: #49494f;
+}
+
+.tag-health {
+  background: #d0fd89;
+}
+
+.tag-vegetables {
+  color: #fff;
+  background: #aebc41;
+}
+
+.tag-meat {
+  color: #fff;
+  background: #b86b78;
+}
+
+.tag-bird {
+  color: #fff;
+  background: #d68334;
+}
+
+.tag-fish {
+  color: #fff;
+  background: #cd6255;
+}
+
+.tag-child {
+  background: #fffdbf;
+}
+
+.tag-parents {
+  background: #f6fdc8;
+}
+
+.tag-holiday {
+  background: #fef7fe;
+}
+
+/* Секция Категории блюд */
+.section-grey {
+  background: #f6f6f6;
+}
+
+.category {
+  padding: 40px 0 60px;
+}
+
+.tabs {
+  display: flex;
+  margin: 0 0 60px;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs-link {
+  font-size: 20px;
+  line-height: 120%;
+  color: #49494f;
+  text-decoration: none;
+  margin-right: 58px;
+}
+
+.tabs-link.active {
+  color: #f37321;
+}
+
+.tabs-content {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+
+.tabs-card {
+  max-width: 265px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.tabs-image {
+  max-width: 100%;
+}
+
+.tabs-card-content {
+  padding: 23px;
+}
+
+.tabs-title {
+  margin: 0 0 13px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.tags-description {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #b9b9be;
+}
+
+.tabs-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+
+.tabs-price {
+  display: block;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 23px;
+  color: #4b4b51;
+  margin-bottom: 5px;
+}
+
+.tabs-weight {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+  color: #aaaab1;
+}
+
+.buttton {
+}
+
+.button-outline {
+  cursor: pointer;
+  padding: 15px 25px;
+  background: transparent;
+  border: 2px solid #f37321;
+  border-radius: 33px;
+  color: #f37321;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+.button-center {
+  display: block;
+  margin: 60px auto 0;
+  width: 100%;
+  max-width: 315px;
+}
+
+/* Секция Наши преимущества */
+.advantages {
+  padding: 100px 0 200px;
+}
+
+.advantage-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.advantage-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 270px;
+  text-align: center;
+  border: 1px solid #e9e9e9;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 18px;
+  padding: 30px 24px 25px;
+}
+
+.advantage-image {
+  max-width: 60px;
+  height: 60px;
+}
+
+.advantage-title {
+  margin: 30px 0 13px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.advantage-text {
+  margin: 0;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+/* Подвал сайта */
+.footer {
+  background: #f6f6f6;
+  padding: 40px 0;
+}
+
+.footer-logo {
+  width: 100%;
+  max-width: 205px;
+}
+
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo {
+  margin-right: 50px;
+}
+
+.footer-link {
+  color: #000;
+  font-size: 16px;
+  line-height: 120%;
+  margin-right: 50px;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.social-link {
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+@media (max-width: 1260px) {
+  ._container {
+    max-width: 960px;
+  }
+
+  .sweet-basket {
+    margin-right: 50px;
+  }
+
+  .search-form {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .tabs-card {
+    flex: 50%;
+    max-width: calc(50% - 40px);
+  }
+
+  .advantage-card {
+    flex-basis: calc(50% - 40px);
+    max-width: unset;
+    margin: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  ._container {
+    max-width: 670px;
+  }
+  .slide {
+    padding: 70px;
+  }
+  .delivery-card {
+    width: calc(50% - 30px);
+    max-width: 100%;
+  }
+  .promo {
+    padding: 35px 0;
+  }
+  .delivery-week {
+    padding: 35px 0 50px;
+  }
+  .tabs {
+    margin-bottom: 30px;
+  }
+  .advantages {
+    padding: 40px 0 70px;
+  }
+  .footer-logo {
+    max-width: 150px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  ._container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .shopping-card {
+    margin-left: 15px;
+    min-width: 49px;
+    min-height: 49px;
+  }
+  .swiper {
+    padding: 0;
+  }
+  .slide-title {
+    font-size: 38px;
+  }
+  .promo {
+    flex-direction: column;
+  }
+  .card {
+    flex-basis: 100%;
+    max-width: unset;
+  }
+  .sweet-basket {
+    margin: 0 0 35px 0;
+  }
+  .delivery-cards {
+    margin: 0;
+  }
+  .section-title {
+    text-align: center;
+    line-height: 120%;
+  }
+  .tabs {
+    justify-content: space-around;
+  }
+  .tabs-content {
+    margin: 0;
+  }
+  .tabs-link {
+    margin: 0;
+    text-align: center;
+  }
+  .tabs-info {
+    flex-direction: column;
+  }
+  .tabs-card .tabs-good {
+    margin-bottom: 20px;
+  }
+  .tabs-price {
+    margin-bottom: 10px;
+  }
+  .tabs-card-content {
+    padding: 15px;
+  }
+  .footer-logo {
+    margin-right: 20px;
+  }
+  .footer-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 30%;
+    text-align: center;
+  }
+  .footer-link {
+    margin: 0;
+  }
+  .footer-link:nth-child(2) {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    flex-wrap: wrap;
+  }
+  .logo {
+    order: 1;
+    flex-basis: 25%;
+  }
+  .logo-image {
+    min-width: 100px;
+  }
+  .search-form {
+    order: 4;
+    flex-basis: 50%;
+    margin: 15px 0 0 0;
+  }
+  .auth {
+    max-width: 170px;
+    width: 100%;
+    order: 3;
+    flex-basis: auto;
+    text-align: center;
+    margin: 0 0 0 10px;
+  }
+  .shopping-card {
+    order: 2;
+    flex-basis: 40%;
+    max-width: 50px;
+    margin: 0 auto;
+  }
+  .slide {
+    padding: 25px;
+  }
+  .slide-content {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .slide-title {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .button-primary {
+    display: block;
+    max-width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .sliders-buttons {
+    bottom: 20px;
+  }
+  .delivery-card {
+    max-width: 100%;
+    width: 100%;
+    margin: 15px 0;
+  }
+  .tabs-card {
+    width: 100%;
+    max-width: 100%;
+  }
+  .advantages {
+    padding-bottom: 40px;
+  }
+  .advantage-card {
+    flex-basis: 100%;
+    margin: 15px 0;
+  }
+  .tabs {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .tabs-item {
+    margin: 5px 0;
+  }
+  .tabs-card {
+    margin: 10px 0;
+    flex-basis: 100%;
+  }
+  .tabs-card-content {
+    padding: 20px;
+  }
+  .tabs-good {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+  }
+  .tabs-price {
+    margin: 0;
+  }
+  .footer-wrapper {
+    flex-wrap: wrap;
+  }
+  .footer-nav {
+    flex-grow: 1;
+  }
+  .footer-logo {
+    max-width: 120px;
+  }
+  .footer-link {
+    font-size: 14px;
+  }
+  .social-links {
+    margin-top: 35px;
+    justify-content: center;
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 410px) {
+  .logo {
+    flex-basis: 50%;
+  }
+  .shopping-card {
+    flex-basis: 50%;
+    width: 100%;
+    margin: 0 0 0 auto;
+  }
+  .search-form {
+    flex-basis: 50%;
+  }
+  .auth {
+    flex-basis: 50%;
+    order: 4;
+    margin-top: 15px;
+    max-width: 100px;
+  }
 }
